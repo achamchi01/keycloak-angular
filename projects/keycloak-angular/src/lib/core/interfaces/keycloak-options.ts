@@ -54,11 +54,11 @@ export interface ExcludedUrlRegex {
 }
 
 /**
- * keycloak-angular initialization options.
+ * rednucleus-keycloak-angular initialization options.
  */
 export interface KeycloakOptions {
   /**
-   * Configs to init the keycloak-js library. If undefined, will look for a keycloak.json file
+   * Configs to init the rednucleus-keycloak-js library. If undefined, will look for a keycloak.json file
    * at root of the project.
    * If not undefined, can be a string meaning the url to the keycloak.json file or an object
    * of {@link Keycloak.KeycloakConfig}. Use this configuration if you want to specify the keycloak server,

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "keycloak-angular": {
+    "rednucleus-keycloak-angular": {
       "root": "projects/keycloak-angular",
       "sourceRoot": "projects/keycloak-angular/src",
       "projectType": "library",
@@ -135,6 +135,9 @@
     }
   },
   "cli": {
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": false
   }
 }
