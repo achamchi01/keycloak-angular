@@ -1,6 +1,6 @@
 {
   "id": "962c3bd8-db32-4719-a1bd-b77c1d256994",
-  "realm": "rednucleus-keycloak-angular-sandbox",
+  "realm": "@rednucleus/keycloak-angular-sandbox",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -65,7 +65,7 @@
       },
       {
         "id": "e8ac2754-f3af-4e3b-aeeb-11c573d83932",
-        "name": "default-roles-rednucleus-keycloak-angular-sandbox",
+        "name": "default-roles-@rednucleus/keycloak-angular-sandbox",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -301,7 +301,7 @@
           "attributes": {}
         }
       ],
-      "rednucleus-keycloak-angular": [],
+      "@rednucleus/keycloak-angular": [],
       "account": [
         {
           "id": "ee773fbb-7e0e-4393-ab1a-434f2e85745f",
@@ -391,7 +391,7 @@
   "groups": [],
   "defaultRole": {
     "id": "e8ac2754-f3af-4e3b-aeeb-11c573d83932",
-    "name": "default-roles-rednucleus-keycloak-angular-sandbox",
+    "name": "default-roles-@rednucleus/keycloak-angular-sandbox",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
@@ -408,7 +408,7 @@
       "emailVerified": true,
       "firstName": "Admin",
       "lastName": "",
-      "email": "admin@rednucleus-keycloak-angular.com",
+      "email": "admin@@rednucleus/keycloak-angular.com",
       "credentials": [
         {
           "id": "5291c160-14ac-48be-9872-a70d0a3a6cfa",
@@ -421,7 +421,7 @@
       ],
       "disableableCredentialTypes": [],
       "requiredActions": [],
-      "realmRoles": ["default-roles-rednucleus-keycloak-angular-sandbox"],
+      "realmRoles": ["default-roles-@rednucleus/keycloak-angular-sandbox"],
       "notBefore": 0,
       "groups": []
     }
@@ -642,7 +642,7 @@
     },
     {
       "id": "94789e06-ac5e-419b-8662-563099827fd9",
-      "clientId": "rednucleus-keycloak-angular",
+      "clientId": "@rednucleus/keycloak-angular",
       "name": "Keycloak Angular Sandbox",
       "description": "",
       "rootUrl": "http://localhost:4200",

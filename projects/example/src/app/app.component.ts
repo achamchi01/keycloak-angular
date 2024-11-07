@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { KeycloakService } from 'rednucleus-keycloak-angular';
-import { KeycloakProfile } from 'rednucleus-keycloak-js';
+import { KeycloakService } from '@rednucleus/keycloak-angular';
+import { KeycloakProfile } from '@rednucleus/keycloak-js';
 
 @Component({
   selector: 'app-root',

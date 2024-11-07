@@ -7,7 +7,7 @@
  */
 
 /**
- * Keycloak event types, as described at the rednucleus-keycloak-js documentation:
+ * Keycloak event types, as described at the @rednucleus/keycloak-js documentation:
  * https://www.keycloak.org/docs/latest/securing_apps/index.html#callback-events
  */
 export enum KeycloakEventType {
@@ -58,7 +58,7 @@ export interface KeycloakEvent {
    */
   type: KeycloakEventType;
   /**
-   * Arguments from the rednucleus-keycloak-js event function.
+   * Arguments from the @rednucleus/keycloak-js event function.
    */
   args?: unknown;
 }

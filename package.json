@@ -1,11 +1,11 @@
 {
-  "name": "rednucleus-keycloak-angular",
-  "version": "13.1.4",
+  "name": "@rednucleus/keycloak-angular",
+  "version": "13.1.0",
   "description": "Easy Keycloak setup for Angular applications",
   "scripts": {
     "clean": "shx rm -rf ./dist/",
-    "build": "npm run clean && ng build rednucleus-keycloak-angular --configuration production",
-    "test": "ng test rednucleus-keycloak-angular",
+    "build": "npm run clean && ng build @rednucleus/keycloak-angular --configuration production",
+    "test": "ng test @rednucleus/keycloak-angular",
     "lint": "ng lint && prettier -c .",
     "lint:fix": "prettier --write .",
     "showcase:keycloak": "docker compose --project-directory projects/example up",
@@ -32,7 +32,7 @@
     "authentication",
     "authorization",
     "keycloak",
-    "rednucleus-keycloak-js"
+    "@rednucleus/keycloak-js"
   ],
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.8",
@@ -65,7 +65,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "^2.0.0",
-    "rednucleus-keycloak-js": "^21.1.2",
+    "@rednucleus/keycloak-js": "^21.1.2",
     "ng-packagr": "^15.2.2",
     "prettier": "^2.8.8",
     "rxjs": "^7.8.1",

@@ -12,7 +12,7 @@ Please fill out the following information. Thanks!
 ### Versions.
 
 <!--
-rednucleus-keycloak-angular, angular and keycloak versions.
+@rednucleus/keycloak-angular, angular and keycloak versions.
 -->
 
 ### Repro steps.

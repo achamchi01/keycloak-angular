@@ -11,7 +11,7 @@ import { HttpHeaders, HttpRequest } from '@angular/common/http';
 
 import { Subject, from } from 'rxjs';
 import { map } from 'rxjs/operators';
-import Keycloak from 'rednucleus-keycloak-js';
+import Keycloak from '@rednucleus/keycloak-js';
 
 import {
   ExcludedUrl,
@@ -30,7 +30,7 @@ import { KeycloakEvent, KeycloakEventType } from '../interfaces/keycloak-event';
 @Injectable()
 export class KeycloakService {
   /**
-   * rednucleus-keycloak-js instance.
+   * @rednucleus/keycloak-js instance.
    */
   private _instance: Keycloak.KeycloakInstance;
   /**
@@ -83,10 +83,10 @@ export class KeycloakService {
   shouldUpdateToken: (request: HttpRequest<unknown>) => boolean;
 
   /**
-   * Binds the rednucleus-keycloak-js events to the keycloakEvents Subject
+   * Binds the @rednucleus/keycloak-js events to the keycloakEvents Subject
    * which is a good way to monitor for changes, if needed.
    *
-   * The keycloakEvents returns the rednucleus-keycloak-js event type and any
+   * The keycloakEvents returns the @rednucleus/keycloak-js event type and any
    * argument if the source function provides any.
    */
   private bindsKeycloakEvents(): void {
@@ -503,7 +503,7 @@ export class KeycloakService {
    * this Angular service does not support yet. Use with caution.
    *
    * @returns
-   * The KeycloakInstance from rednucleus-keycloak-js.
+   * The KeycloakInstance from @rednucleus/keycloak-js.
    */
   getKeycloakInstance(): Keycloak.KeycloakInstance {
     return this._instance;
@@ -532,7 +532,7 @@ export class KeycloakService {
   }
 
   /**
-   * Keycloak subject to monitor the events triggered by rednucleus-keycloak-js.
+   * Keycloak subject to monitor the events triggered by @rednucleus/keycloak-js.
    * The following events as available (as described at keycloak docs -
    * https://www.keycloak.org/docs/latest/securing_apps/index.html#callback-events):
    * - OnAuthError
@@ -543,7 +543,7 @@ export class KeycloakService {
    * - OnReady
    * - OnTokenExpire
    * In each occurrence of any of these, this subject will return the event type,
-   * described at {@link KeycloakEventType} enum and the function args from the rednucleus-keycloak-js
+   * described at {@link KeycloakEventType} enum and the function args from the @rednucleus/keycloak-js
    * if provided any.
    *
    * @returns

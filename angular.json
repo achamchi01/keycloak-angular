@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rednucleus-keycloak-angular": {
+    "@rednucleus/keycloak-angular": {
       "root": "projects/keycloak-angular",
       "sourceRoot": "projects/keycloak-angular/src",
       "projectType": "library",

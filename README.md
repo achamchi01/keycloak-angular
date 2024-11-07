@@ -19,7 +19,7 @@
 - [Example project](#example-project)
 - [AuthGuard](#authguard)
 - [HttpClient Interceptor](#httpclient-interceptor)
-- [rednucleus-keycloak-js Events](#rednucleus-keycloak-js-events)
+- [@rednucleus/keycloak-js Events](#@rednucleus/keycloak-js-events)
 - [Contributors](#contributors)
 - [License](#license)
 
@@ -27,9 +27,9 @@
 
 ## About
 
-This library helps you to use [rednucleus-keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#_javascript_adapter) in Angular applications providing the following features:
+This library helps you to use [@rednucleus/keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#_javascript_adapter) in Angular applications providing the following features:
 
-- A **Keycloak Service** which wraps the `rednucleus-keycloak-js` methods to be used in Angular, giving extra
+- A **Keycloak Service** which wraps the `@rednucleus/keycloak-js` methods to be used in Angular, giving extra
   functionalities to the original functions and adding new methods to make it easier to be consumed by
   Angular applications.
 - Generic **AuthGuard implementation**, so you can customize your own AuthGuard logic inheriting the authentication logic and the roles load.
@@ -43,14 +43,14 @@ This library helps you to use [rednucleus-keycloak-js](https://www.keycloak.org/
 Run the following command to install both Keycloak Angular and the official Keycloak client library:
 
 ```sh
-npm install rednucleus-keycloak-angular rednucleus-keycloak-js
+npm install @rednucleus/keycloak-angular @rednucleus/keycloak-js
 ```
 
-Note that `rednucleus-keycloak-js` is a peer dependency of Keycloak Angular. This change allows greater flexibility of choosing the right version of the Keycloak client version for your project.
+Note that `@rednucleus/keycloak-js` is a peer dependency of Keycloak Angular. This change allows greater flexibility of choosing the right version of the Keycloak client version for your project.
 
 ### Versions
 
-| Angular | rednucleus-keycloak-js | rednucleus-keycloak-angular |       Support       |
+| Angular | @rednucleus/keycloak-js | @rednucleus/keycloak-angular |       Support       |
 | :-----: | :---------: | :--------------: | :-----------------: |
 |  15.x   |   18 - 21   |      13.x.x      | New Features / Bugs |
 |  14.x   |   18 - 19   |      12.x.x      |        Bugs         |
@@ -60,7 +60,7 @@ Note that `rednucleus-keycloak-js` is a peer dependency of Keycloak Angular. Thi
 
 Only the latest version of Angular in the table above is actively supported. This is due to the fact that compilation of Angular libraries might be [incompatible between major versions](https://angular.io/guide/creating-libraries#ensuring-library-version-compatibility).
 
-#### Choosing the right rednucleus-keycloak-js version
+#### Choosing the right @rednucleus/keycloak-js version
 
 The Keycloak client documentation recommends to use the same version of your Keycloak server installation.
 
@@ -73,7 +73,7 @@ Use the code provided below as an example and implement it's functionality in yo
 ```ts
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { KeycloakAngularModule, KeycloakService } from 'rednucleus-keycloak-angular';
+import { KeycloakAngularModule, KeycloakService } from '@rednucleus/keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -144,7 +144,7 @@ import {
   Router,
   RouterStateSnapshot
 } from '@angular/router';
-import { KeycloakAuthGuard, KeycloakService } from 'rednucleus-keycloak-angular';
+import { KeycloakAuthGuard, KeycloakService } from '@rednucleus/keycloak-angular';
 
 @Injectable({
   providedIn: 'root'
@@ -237,11 +237,11 @@ await keycloak.init({
 });
 ```
 
-## rednucleus-keycloak-js Events
+## @rednucleus/keycloak-js Events
 
-The callback events from [rednucleus-keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#javascript-adapter-reference) are available through a RxJS subject which is defined by `keycloakEvents$`.
+The callback events from [@rednucleus/keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#javascript-adapter-reference) are available through a RxJS subject which is defined by `keycloakEvents$`.
 
-For example you make rednucleus-keycloak-angular auto refreshing your access token when expired:
+For example you make @rednucleus/keycloak-angular auto refreshing your access token when expired:
 
 ```ts
 keycloakService.keycloakEvents$.subscribe({
@@ -268,7 +268,7 @@ document.
 
 ## License
 
-**rednucleus-keycloak-angular** is licensed under the **[MIT license](LICENSE)**.
+**@rednucleus/keycloak-angular** is licensed under the **[MIT license](LICENSE)**.
 
 <!-- prettier-ignore-start -->
 [license-mit-badge]: https://img.shields.io/badge/License-MIT-yellow

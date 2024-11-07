@@ -5,5 +5,5 @@
   "lib": {
     "entryFile": "src/public_api.ts"
   },
-  "allowedNonPeerDependencies": ["tslib", "rednucleus-keycloak-js"]
+  "allowedNonPeerDependencies": ["tslib", "@rednucleus/keycloak-js"]
 }
